@@ -1,0 +1,209 @@
+:root {
+    --violeta: #2a044a;
+    --azul: #0b2e59;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fuenteprin: 'Signika Negative', sans-serif;
+    --gris:#606d80;
+    --gricesito:#dce0e6;
+}
+
+body {
+    background-color: var(--violeta);
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuenteprin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: var(--gricesito);
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    height: 90%;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedor .contenedor-login {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contenedor .contenedor-login > h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenedor .contenedor-login > p,
+.contenedor .contenedor-login > span {
+    text-align: center;
+    color: var(--violeta);
+    text-transform: uppercase;
+}
+
+
+.contenedor .contenedor-login label {
+display: block;
+font-weight: bold;
+padding: 5px 0;
+text-transform: uppercase;
+}
+
+
+.contenedor .contenedor-login input.input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--violeta);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor .contenedor-login input.input:focus {
+    outline: solid 2px var(--violeta);
+}
+
+.contenedor .contenedor-login .opciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor .contenedor-login span {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--violeta);
+}
+
+.boton {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.boton.boton-login {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.boton.boton-login:hover {
+    background-color: #333;
+}
+
+
+.contenedor .contenedor-login a {
+    text-decoration: none;
+    color: var(--violeta);
+}
+
+.contenedor .contenedor-login a:hover {
+    text-decoration: underline;
+}
+
+.contenedor .contenedor-login .metodos {
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.boton.boton-google {
+    background-color: var(--blanco);
+    color: var(--negro);
+    margin-bottom: 1rem;
+    border: 1px solid var(--gris)
+}
+
+.boton.boton-google:hover {
+    background-color: #ecebeb ;
+}
+
+.boton.boton-facebook {
+    background-color: #1094F4;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+    border: 1px solid var(--azul);
+}
+
+.boton.boton-facebook:hover {
+    background-color: #0f7bc9;
+}
+
+.boton.boton-twitter {
+    background-color: #84C8F7;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+    border: 1px solid var(--azul);
+}
+
+.boton.boton-twitter:hover {
+    background-color: #88badf;
+}
+
+
+.contenedor .imagen {
+    width: 50%;
+    height: 100%;
+    background-color: var(--negro);
+}
+
+.imagen {
+    background-image: url(disneyplus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 0;
+}
+
+@media screen and (max-width: 1350px) {
+     .contenedor {
+        width: 95%;
+     }
+
+     .contenedor .contenedor-login {
+        width: 400px;
+        margin: 0 auto;
+     }
+
+     .imagen {
+        width: 40%;
+     }
+}
+
+@media screen and (max-width: 900px) {
+     .contenedor .contenedor-login {
+         width: 400px;
+         margin: 0 auto;
+     }
+
+     .contenedor .imagen {
+        width: 0;
+     }
+}
+
+@media screen and (max-width: 450px) {
+     body {
+        padding: 4rem 0;
+     }
+
+     .contenedor {
+        margin: 1rem;
+        height: 85%;
+        padding: 5rem 1rem;
+     }
+
+     .contenedor .contenedor-login {
+        width: 90%;
+        margin: 0 auto;
+     }
+}
